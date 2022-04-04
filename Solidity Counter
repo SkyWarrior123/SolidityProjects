@@ -1,0 +1,25 @@
+//SPDX-License-Identifier: UNLICENSED
+
+pragma solidity ^0.8.8;  
+
+contract Counter {
+    uint public Count;  // Declaring the Variable Count as public
+
+
+    //Creating a function to increment the Value of Count by 1
+    function inc() external {     
+        Count += 1;
+    }
+
+
+    //Creating a function to decrement the Value of Count by 1
+    function dec() external {
+        Count -= 1;
+    }
+
+
+    // Creating a function to reset the Value of Count to 0
+    function reset() external {
+        Count = 0;
+    }
+}
